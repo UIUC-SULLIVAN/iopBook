@@ -1,12 +1,15 @@
 \chapter{Radiation Types and Interactions}
 
+The field of isotope identification is dominated by the interactions of radiation with matter.  These interactions form the basis both of the formation of a signal to be measured (to be described in Chapter 2) as well as the means to identify the isotopes themselves.  Generically speaking, radiation the transmision of energy through any wave or particle.  For the purposes of this book, we shall limit our discussion to ionizing radiation since the nuclear materials identifiable through these techniques are radioactive and emit one or more types of such radiation.  This means that we will largely be exploring radiation that is fairly energetic, since it must possess enough energy to ionize and incident atom, which typically is not possible below energies of 10 electron volts or eV (note that 1 eV is the energy gained by a single electron moving through a potential of 1 volt).  Practically speaking, most of this book will focus on particles with orders of magnitude greater energy than this, keV and MeV.
+
+In this chapter we shall present the different types of ionizing radiation as well  as their interaction mechnisms and the probability or cross section of those interactions.
+
 \section{Types of Radiation}
 
-The measurement of radioactive isotopes occurs through the detection and quantification of ionizing radiation.  There are several types of radiation that can ionize matter ranging from neutral particles to waves to charged particles.  Ionizing radiation is specifically a particle or wave that has enough energy to ionize an atom that it might interact with.  As such, the energies that we shall be concerned with tend to correspond to at least the binding energy of an atom, which is on the order of a few electron volts (eV).  Measuring a single ionization is incredibly difficult though, so in reality we will discuss incident radiation whose energy is high enough to cause several ionizations -- typically on the order of 1 keV and higher.
+The measurement of radioactive isotopes occurs through the detection and quantification of ionizing radiation.  There are several types of radiation that can ionize matter ranging from neutral particles to waves to charged particles.  
+In this chapter we shall study the four main types of ionizing radiation --  alpha particles, beta particles, high-energy photons (including gamma rays and x-rays), and neutrons -- and their common interactions in matter.  There are, of course, a host of other types of radiation that we could attempt to detect such as neutrinos and fission fragments.  While important, it will become clear in this chapter that the four mentioned particles are responsible for the majority of information required for isotope identification.  
 
-In this chapter we shall study the four main types of ionizing radiation --  alpha particles, beta particles, high-energy photons, and neutrons -- and their common interactions in matter.  There are, of course, a host of other types of radiation that we could attempt to detect such as neutrinos and fission fragments.  While important, it will become clear in this chapter that the four mentioned particles are responsible for the majority of information required for isotope identification.  
-
-In fact, isotope identification can almost always be achieved through the analysis of the energy distribution from the photons (gamma rays and x-rays) emitted by the isotope.  This energy distribution is recorded as a histogram called a spectrum and is the focus of the majority of this text.  That being said, alpha particles, beta particles, and neutrons all are capable of being either directly or indirectly in a spectrum and thus it is important to study them as well.
+In fact, isotope identification can almost always be achieved through the analysis of the energy distribution from the photons emitted by the isotope.  This energy distribution is recorded as a histogram called a spectrum and is the focus of the majority of this text.  That being said, alpha particles, beta particles, and neutrons all are capable of being either directly or indirectly in a spectrum and thus it is important to study them as well.
 
 \subsection{Alpha particles}
 \subsection{Beta particles}
@@ -23,7 +26,27 @@ It is because of this fact that high-energy photons can provide a unique identif
 \subsection{Photoelectric Effect}
 As implied by the name, the photoelectric effect includes both photons and electrons.  In this process, the photon is absorbed by an atom and electron in released in its place.  The photoelectric effect was first observed by Heinrich Hertz when he noted an increase in the probability of creating electric sparks when a conductor was illuminated with ultraviolet light. \cite{hertz1887} Planck, Einstein, and Millikan, to name a few, also contributed through theoretical and experiemental study to our understanding of the photoelectric effect. \cite{einstein1905,millikan1914,millikan1916}
 
+A schematic of the physical process of the photoelectric effect is shown in Figure ***.  In the photoelectric effect, a photon is absorbed by an atom, which in turn emits an electron.  The photoemission process requires that the energy of the incident photon, given by
+\begin{equation}
+E = h\nu,
+\label{ch1:photonEnergy}
+\end{equation}
+must exceed the electron binding energy of the atom, $E_{b}$ where $h$ is Planck's constant and $\nu$ is the frequency of the photon.  When this occurs, a photoelectron is emitted whose energy is
+\begin{equation}
+E_{e^{-}} = h\nu - E_{b}.
+\label{ch1:E_e}
+\end{equation}
+In most radiation detector materials, the range of this electron is very small and it is quickly absorbed, thus depositing $E_{e^{-}}$ back into the detector.
 
+\missingfigure[figwidth=6cm]{The photoelectric effect.}
+
+In the field of gamma-ray spectroscopy, the photoelectric effect results in full energy deposition (minus the very small value of $E_{b}$) in a single interaction.  This makes it ideal to chose detector materials and scenarios that would maximize the probability of the photoelectric effect.  This probability is a function of both the energy of the incident photon, $E$, as well as the atomic number of the absorber, $Z$.  A rule of thumb for the cross section of this process, $\sigma$, is
+
+\begin{equation}
+\sigma \sim \frac{Z^{4.5}}{E^{3.5}}.
+\label{ch1:photoEcrossSection}
+\end{equation}
+Therefore, it is clear that detectors made of elements of high atomic number will have a greater probability of the photoelectric effect than materials of lower $Z$.
 
 \subsection{Compton Scatter}
 \subsection{Pair Production}
